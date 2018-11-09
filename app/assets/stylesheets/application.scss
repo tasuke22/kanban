@@ -1,4 +1,13 @@
 @import "bootstrap";
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+@import "layouts/_header";
+
+
 @import "components/_button";
 
 @import "users/sign_up";
+
+@import "users/sign_in";
