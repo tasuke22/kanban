@@ -38,6 +38,11 @@
       .cardWrapper {
         overflow-y: scroll;
         max-height: 76vh;
+        
+        .cardDetail_link {
+          text-decoration: none;
+          color: #323232;
+        }
 
         /* ==========ここから追加する========== */
         .card {
