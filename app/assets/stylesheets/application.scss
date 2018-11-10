@@ -1,18 +1,16 @@
+/* Library */
 @import "bootstrap";
-
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+/* Layouts */
 @import "layouts/_header";
 
-
+/* Components */
 @import "components/_button";
 
 @import "users/sign_up";
 @import "users/sign_in";
-
 @import "list/new";
-
+@import "list/edit";
 @import "top";
-
-

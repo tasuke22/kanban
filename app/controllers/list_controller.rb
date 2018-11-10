@@ -1,4 +1,7 @@
 class ListController < ApplicationController
+  # edit・updateアクションを呼ぶ前にset_listメソッドを読む
+  before_action :set_list, only: %i(edit update)
+
   def new
     @list = List.new
   end
@@ -13,8 +16,27 @@ class ListController < ApplicationController
     end
   end
 
+  # @listインスタンス変数の定義は削除する
+  def edit
+  end
+
+  # @listインスタンス変数の定義は削除する
+  def update
+    if @list.update_attributes(list_params)
+      redirect_to :root
+    else
+      @list.valid?
+      render action: :edit
+    end
+  end
+
   private
     def list_params
       params.require(:list).permit(:title).merge(user: current_user)
+    end
+
+    # ここにメソッドを追加する
+    def set_list
+      @list = List.find_by(id: params[:id])
     end
 end
