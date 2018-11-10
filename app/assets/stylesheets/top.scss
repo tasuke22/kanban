@@ -30,13 +30,40 @@
             font-size: 18px;
             color: #8c8c8c;
           }
-
-          /* ==========このから追加する========== */
           .fa-trash {
             margin-right: 10px;
           }
-          /* ==========このまで追加する========== */
+        }
+      }
+      .cardWrapper {
+        overflow-y: scroll;
+        max-height: 76vh;
 
+        /* ==========ここから追加する========== */
+        .card {
+          margin-bottom: 10px;
+          padding: 10px;
+          &_title {
+            font-size: 17px;
+          }
+          &_detail {
+            display: none;
+            &.is-exist {
+              display: block;
+              color: #999;
+              & > i {
+                display: block;
+              }
+            }
+          }
+        }
+        /* ==========ここまで追加する========== */
+
+        .addCard {
+          color: #8c8c8c;
+          &_link {
+            color: #8c8c8c;
+          }
         }
       }
     }
