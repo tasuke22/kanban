@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root 'top#index'
 
   # この行を編集する
-  resources :list, only: %i(new create edit update)
+  resources :list, only: %i(new create edit update destroy)
 end
