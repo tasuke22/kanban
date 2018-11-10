@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  
   devise_for :users
-  root "top#index" #root（トップページ「/」）に訪れた際にtopコントローラーのindexアクションを実行
+  root 'top#index'
+  # この一行に書き換える
+  resources :list, only: %i(new create)
 end

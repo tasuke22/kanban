@@ -6,7 +6,9 @@
       <li>
         <ul class="header_menu_inner">
 
-          <li><%= link_to "リストを作成", "#", class: "nav-link listNew" %></li>
+          <%# ==========この行を編集する========== %>
+          <li><%= link_to "リストを作成", new_list_path, class: "nav-link listNew" %></li>
+
           <li><%= link_to "ログアウト", destroy_user_session_path, class: "nav-link", method: :delete %></li>
         </ul>
       </li>
