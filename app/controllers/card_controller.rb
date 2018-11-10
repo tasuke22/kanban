@@ -1,6 +1,6 @@
 class CardController < ApplicationController
   
-  before_action :set_card, only: %i(show edit update)
+  before_action :set_card, only: %i(show edit update destroy)
 
   
   def new
@@ -33,6 +33,11 @@ class CardController < ApplicationController
       @card.valid?
       render action: :edit
     end
+  end
+  
+  def destroy
+    @card.destroy
+    redirect_to :root
   end
 
   private

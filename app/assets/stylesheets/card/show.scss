@@ -11,8 +11,6 @@
       border-bottom: 1px solid #ccc;
       margin-bottom: 30px;
     }
-
-    /* ==========このから追加する========== */
     &_btnArea {
       margin-top: 40px;
       text-align: center;
@@ -31,9 +29,14 @@
             opacity: .7;
           }
         }
+
+        /* ==========このから追加する========== */
+        &.delete_btn {
+          margin-top: 20px;
+        }
+        /* ==========このまで追加する========== */
+
       }
     }
-    /* ==========このまで追加する========== */
-
   }
 }
