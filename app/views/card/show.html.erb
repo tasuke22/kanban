@@ -13,6 +13,13 @@
         <div>リスト名</div>
         <div><%= @card.list.title %></div>
       </div>
+
+      <!-- ==========ここから追加する========== -->
+      <div class="cardContents_btnArea">
+        <%= link_to '編集する', edit_list_card_path(@card.list, @card), class: "edit_btn" %>
+      </div>
+      <!-- ==========ここまで追加する========== -->
+
     </div>
   </div>
 </div>

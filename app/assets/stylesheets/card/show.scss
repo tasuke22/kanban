@@ -11,5 +11,29 @@
       border-bottom: 1px solid #ccc;
       margin-bottom: 30px;
     }
+
+    /* ==========このから追加する========== */
+    &_btnArea {
+      margin-top: 40px;
+      text-align: center;
+      & > a {
+        display: block;
+        &.edit_btn {
+          max-width: 200px;
+          margin: 0 auto;
+          background: #026aa7;
+          padding: 7px;
+          border-radius: 10px;
+          color: #fff;
+          transition: opacity .5s;
+          text-decoration: none;
+          &:hover {
+            opacity: .7;
+          }
+        }
+      }
+    }
+    /* ==========このまで追加する========== */
+
   }
 }
