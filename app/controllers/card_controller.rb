@@ -4,7 +4,6 @@ class CardController < ApplicationController
 
   
   def new
-    # ここに追加する
     @card = Card.new
     @list = List.find_by(id: params[:list_id])
   end

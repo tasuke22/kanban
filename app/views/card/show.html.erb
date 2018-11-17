@@ -16,7 +16,6 @@
       <div class="cardContents_btnArea">
         <%= link_to '編集', edit_list_card_path(@card.list, @card), class: "edit_btn" %>
 
-        <!-- ここに追加する -->
         <%= link_to '削除をする', list_card_path(@card.list, @card), class: "text-danger delete_btn", method: :delete, data: { confirm: "このカードを削除して大丈夫ですか?" } %>
 
       </div>
